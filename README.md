@@ -24,9 +24,9 @@ Currently learning and practicing:
 
 My current level is foundational, and I am continuing to improve through coursework, coding practice, and small projects.
 
-## 📚 Computer Science Learning Areas
+## 📚 Academic Areas in My Degree
 
-Through my academic journey, I am developing knowledge across areas such as:
+My B.Sc. Computer Science programme includes academic learning and exposure to areas such as:
 
 - Programming & Problem Solving
 - Data Structures
@@ -41,7 +41,7 @@ Through my academic journey, I am developing knowledge across areas such as:
 - Data Science
 - Machine Learning
 
-These are areas within my academic learning and exploration. My practical knowledge will continue to develop throughout my degree.
+These are academic learning areas in my degree. They are not meant to represent professional expertise; my practical depth will continue to develop throughout my degree.
 
 ## 🌱 Current Focus
 
@@ -64,13 +64,17 @@ I have not chosen a specific specialization yet. I want to gain practical exposu
 
 ## 📂 Projects
 
-I am currently building my programming foundation and will add academic and personal projects here as I create them.
+### Student Result Management System in C
 
-Each project will be documented with its purpose, technologies used, and key learning outcomes.
+My first C programming project — a console-based student result management system.
+
+🔗 [View the project](https://github.com/annu468/student-result-management-c)
+
+I plan to add more academic and personal projects as I create and learn from them.
 
 ## 🎯 Goal
 
-My goal is to build a strong foundation in Computer Science, develop practical skills through consistent practice, and gradually grow into a capable technology professional.
+My goal is to build a strong foundation in Computer Science, develop practical skills through consistent practice, and gradually grow through real projects and academic learning.
 
 This GitHub profile will evolve with my learning journey and reflect my actual skills, projects, and experience over time.
 
@@ -79,4 +83,3 @@ This GitHub profile will evolve with my learning journey and reflect my actual s
 ### 📌 Learning Journey
 
 **Student → Learner → Builder → Developer**
-
