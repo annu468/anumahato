@@ -1,0 +1,49 @@
+# Operating system files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Editors and IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.venv/
+venv/
+env/
+ENV/
+*.egg-info/
+
+# Java
+*.class
+target/
+out/
+.gradle/
+build/
+
+# C / C++
+*.o
+*.obj
+*.out
+*.exe
+*.a
+*.so
+*.dll
+
+# Logs and temporary files
+*.log
+*.tmp
+*.temp
+
+# Local environment / secrets
+.env
+.env.*
+!.env.example
