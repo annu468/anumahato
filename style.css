@@ -84,7 +84,10 @@ main {
 .muted { color: var(--muted); }
 .skills { display: flex; flex-wrap: wrap; gap: 10px; padding: 0; margin: 20px 0 0; list-style: none; }
 .skills li { padding: 6px 12px; border: 1px solid #bfdbfe; border-radius: 999px; color: #1e40af; background: #eff6ff; font-size: .88rem; font-weight: 700; }
-.goal-section { display: grid; grid-template-columns: 48px minmax(0,1fr); gap: 17px; align-content: start; }
+.goal-section {
+  grid-column: 1 / -1;
+  display: grid; grid-template-columns: 48px minmax(0,1fr); gap: 17px; align-content: start;
+}
 .section-icon, .project-icon {
   display: grid; place-items: center; width: 48px; height: 48px; border-radius: 14px;
   color: var(--blue); background: linear-gradient(145deg, #e9f1ff, #d9e6ff); font-size: 1.4rem; font-weight: 800;
@@ -119,7 +122,7 @@ a:focus-visible { outline: 3px solid #fbbf24; outline-offset: 4px; border-radius
   .header-inner { width: min(100% - 36px, 680px); grid-template-columns: 1fr; gap: 32px; }
   .hero-panel { max-width: none; }
   main { width: min(100% - 32px, 680px); padding: 24px 0 38px; grid-template-columns: 1fr; gap: 14px; }
-  .projects-section { grid-column: auto; }
+  .goal-section, .projects-section { grid-column: auto; }
   .project-grid { grid-template-columns: 1fr; }
   .section { padding: 25px; border-radius: 16px; }
 }
