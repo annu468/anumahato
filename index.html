@@ -3,62 +3,89 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="The personal learning portfolio of Anu Mahato, featuring beginner projects in HTML and C programming.">
+  <meta name="description" content="Anu Mahato's student portfolio featuring learning goals and beginner projects in HTML and C programming.">
+  <meta name="theme-color" content="#172554">
   <title>Anu Mahato | Student Portfolio</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header class="site-header">
     <div class="header-inner">
-      <img class="profile-pic" src="https://avatars.githubusercontent.com/u/308239215?v=4" alt="Anu Mahato profile picture" width="76" height="76">
-      <p class="eyebrow">Student Portfolio</p>
-      <h1>Hello, I'm Anu Mahato.</h1>
-      <p class="tagline">A Computer Science student learning to build useful things, one project at a time.</p>
-      <div class="header-actions">
-        <a class="button button-light" href="#projects">Explore my projects ↓</a>
-        <a class="button button-outline" href="https://github.com/annu468">My GitHub profile ↗</a>
+      <div class="hero-copy">
+        <img class="profile-pic" src="https://avatars.githubusercontent.com/u/308239215?v=4" alt="Anu Mahato profile picture" width="76" height="76">
+        <p class="eyebrow">Student Portfolio</p>
+        <h1>Hello, I'm Anu Mahato<span>.</span></h1>
+        <p class="tagline">A Computer Science student learning to build useful things, one project at a time.</p>
+        <div class="header-actions">
+          <a class="button button-light" href="#projects">Explore my projects ↓</a>
+          <a class="button button-outline" href="https://github.com/annu468" target="_blank" rel="noopener noreferrer">My GitHub profile ↗</a>
+        </div>
       </div>
+      <aside class="hero-panel" aria-label="Portfolio highlights">
+        <p class="panel-kicker">MY LEARNING JOURNEY</p>
+        <h2>Curious mind.<br>Practical projects.</h2>
+        <p>I’m building my skills step by step through practice and small projects.</p>
+        <div class="panel-divider"></div>
+        <p class="panel-label">CURRENTLY EXPLORING</p>
+        <div class="panel-tags"><span>HTML</span><span>CSS</span><span>C</span><span>Java</span><span>Python</span></div>
+        <a class="panel-link" href="#skills">See what I'm learning <span aria-hidden="true">→</span></a>
+      </aside>
     </div>
   </header>
 
   <main>
     <section class="section" id="about">
+      <p class="section-kicker">A LITTLE INTRODUCTION</p>
       <h2>About Me</h2>
       <p>I'm learning the fundamentals of programming and web development. I enjoy practising new concepts by building small projects and improving them step by step.</p>
     </section>
 
     <section class="section" id="skills">
+      <p class="section-kicker">CURRENT FOCUS</p>
       <h2>What I'm Learning</h2>
-      <p class="muted">My current learning list</p>
+      <p class="muted">The subjects I'm exploring on my learning journey.</p>
       <ul class="skills">
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>C Programming</li>
-        <li>Java</li>
-        <li>Python</li>
+        <li>HTML</li><li>CSS</li><li>C Programming</li><li>Java</li><li>Python</li>
       </ul>
     </section>
 
-    <section class="section" id="goal">
-      <h2>My Goal</h2>
-      <p>To build a strong foundation in Computer Science, keep learning through practice, and create projects that are useful to others.</p>
+    <section class="section goal-section" id="goal">
+      <div class="section-icon" aria-hidden="true">✦</div>
+      <div>
+        <p class="section-kicker">LOOKING AHEAD</p>
+        <h2>My Goal</h2>
+        <p>To build a strong foundation in Computer Science, keep learning through practice, and create projects that are useful to others.</p>
+      </div>
     </section>
 
-    <section class="section" id="projects">
-      <h2>My Projects</h2>
-      <p class="muted">A couple of projects from my learning journey.</p>
+    <section class="section projects-section" id="projects">
+      <div class="projects-heading">
+        <div>
+          <p class="section-kicker">BUILT WHILE LEARNING</p>
+          <h2>My Projects</h2>
+        </div>
+        <p class="muted">Small steps, practical experience.</p>
+      </div>
       <div class="project-grid">
         <article class="project-card">
-          <h3>Student Result Management System</h3>
-          <p>A beginner C programming project for managing student result records.</p>
-          <a class="project-link" href="https://github.com/annu468/student-result-management-c">View C project ↗</a>
+          <div class="project-icon" aria-hidden="true">&lt;/&gt;</div>
+          <div class="project-body">
+            <p class="project-type">C PROGRAMMING</p>
+            <h3>Student Result Management System</h3>
+            <p>A beginner C programming project for managing student result records.</p>
+            <a class="project-link" href="https://github.com/annu468/student-result-management-c" target="_blank" rel="noopener noreferrer">View C project <span aria-hidden="true">↗</span></a>
+          </div>
         </article>
         <article class="project-card">
-          <h3>My First HTML Project</h3>
-          <p>A simple webpage made to practise HTML structure, sections, lists and links.</p>
-          <div class="project-actions">
-            <a class="project-link" href="https://annu468.github.io/anumahato/html-projects/my-first-html-project/">Live website ↗</a>
-            <a class="project-link" href="https://github.com/annu468/anumahato/tree/main/html-projects/my-first-html-project">Source code ↗</a>
+          <div class="project-icon" aria-hidden="true">✧</div>
+          <div class="project-body">
+            <p class="project-type">HTML &amp; CSS</p>
+            <h3>My First HTML Project</h3>
+            <p>A responsive personal webpage built to practise HTML structure and CSS styling.</p>
+            <div class="project-actions">
+              <a class="project-link" href="https://annu468.github.io/anumahato/html-projects/my-first-html-project/">Live demo <span aria-hidden="true">↗</span></a>
+              <a class="project-link secondary-link" href="https://github.com/annu468/anumahato/tree/main/html-projects/my-first-html-project" target="_blank" rel="noopener noreferrer">Source code <span aria-hidden="true">↗</span></a>
+            </div>
           </div>
         </article>
       </div>
@@ -66,7 +93,8 @@
   </main>
 
   <footer class="site-footer">
-    <p>Made with care by Anu Mahato · Built with HTML and CSS · Hosted free on GitHub Pages</p>
+    <p>Made with care by <strong>Anu Mahato</strong></p>
+    <p>Built with HTML &amp; CSS · Hosted on GitHub Pages</p>
   </footer>
 </body>
 </html>
