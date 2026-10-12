@@ -107,6 +107,7 @@ main { padding: 30px 0 54px; }
 .project-card h3 { margin: 0 0 8px; color: var(--navy); font-size: 1.1rem; }
 .project-card p { margin: 0 0 15px; color: var(--muted); }
 .project-link { font-weight: 750; }
+.project-actions { display: flex; flex-wrap: wrap; gap: 16px; }
 
 .site-footer { padding: 0 0 32px; color: var(--muted); text-align: center; font-size: .92rem; }
 
