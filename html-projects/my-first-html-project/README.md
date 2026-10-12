@@ -1,36 +1,41 @@
-# My First HTML Project
+# My First HTML & CSS Project
 
-**Anu Mahato · Beginner HTML project**
+**Anu Mahato · Beginner web development project**
 
-This is a simple personal webpage built using HTML only. I created it to practise the basic structure of a web page and learn how semantic HTML elements work.
+A responsive personal learning page built with semantic HTML and a separate CSS stylesheet. The project is intentionally lightweight and uses no framework, build tools, or JavaScript.
+
+## Live Demo
+
+https://annu468.github.io/anumahato/html-projects/my-first-html-project/
 
 ## What I Practised
 
-- HTML document structure: `<!DOCTYPE html>`, `html`, `head`, and `body`
-- Headings and paragraphs
-- Semantic elements: `header`, `main`, `section`, and `footer`
-- Lists and links
-- The viewport meta tag for mobile-friendly page sizing
-
-## How to Open
-
-1. Open `index.html` in a web browser.
-2. Explore the page and inspect its HTML source to understand each element.
-
-No installation, build tools, CSS, or JavaScript are required.
+- Semantic HTML structure with `header`, `nav`, `main`, `section`, and `footer`
+- Linking a separate stylesheet with `link rel="stylesheet"`
+- Responsive layouts using CSS Grid, Flexbox, and media queries
+- Consistent colours, spacing, typography, cards, and buttons
+- Accessible image text, navigation labels, and visible keyboard focus
+- Linking to a GitHub project and back to the main portfolio
 
 ## Project Structure
 
 ```text
 my-first-html-project/
 ├── index.html
+├── style.css
 └── README.md
 ```
 
+## How to Run
+
+Open `index.html` in a browser. The stylesheet is loaded from the same folder, so no installation or build step is required. The profile photo uses Anu's public GitHub avatar and needs an internet connection to load.
+
 ## Next Learning Steps
 
-I plan to learn CSS next to improve the layout, colours, spacing, and responsiveness, and then explore JavaScript for interactivity.
+- Practise HTML forms and tables
+- Learn JavaScript fundamentals for interactivity
+- Keep testing the layout on mobile and desktop screens
 
 ---
 
-This is a beginner learning project, built as part of my Computer Science learning journey.
+A beginner project created as part of Anu Mahato's Computer Science learning journey.
