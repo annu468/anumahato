@@ -3,57 +3,66 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Anu Mahato | My First Website</title>
+  <meta name="description" content="The personal learning portfolio of Anu Mahato, featuring beginner projects in HTML and C programming.">
+  <title>Anu Mahato | Student Portfolio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>Hello, I'm Anu Mahato!</h1>
-    <p>A Computer Science student learning HTML, one page at a time.</p>
+  <header class="site-header">
+    <div class="header-inner">
+      <p class="eyebrow">Student Portfolio</p>
+      <h1>Hello, I'm Anu Mahato.</h1>
+      <p class="tagline">A Computer Science student learning to build useful things, one project at a time.</p>
+      <div class="header-actions">
+        <a class="button button-light" href="#projects">Explore my projects ↓</a>
+        <a class="button button-outline" href="https://github.com/annu468">My GitHub profile ↗</a>
+      </div>
+    </div>
   </header>
 
-  <hr>
-
   <main>
-    <section>
+    <section class="section" id="about">
       <h2>About Me</h2>
-      <p>I am learning the fundamentals of web development and building small projects to practise what I learn.</p>
+      <p>I'm learning the fundamentals of programming and web development. I enjoy practising new concepts by building small projects and improving them step by step.</p>
     </section>
 
-    <section>
+    <section class="section" id="skills">
       <h2>What I'm Learning</h2>
-      <ul>
+      <p class="muted">My current learning list</p>
+      <ul class="skills">
         <li>HTML</li>
-        <li>C programming</li>
+        <li>CSS</li>
+        <li>C Programming</li>
         <li>Java</li>
         <li>Python</li>
       </ul>
     </section>
 
-    <section>
+    <section class="section" id="goal">
       <h2>My Goal</h2>
-      <p>My goal is to build a strong foundation in Computer Science and gradually create useful projects.</p>
+      <p>To build a strong foundation in Computer Science, keep learning through practice, and create projects that are useful to others.</p>
     </section>
 
-    <section>
-      <h2>Explore My Work</h2>
-      <p>Take a look at my first C programming project:</p>
-      <p>
-        <a href="https://github.com/annu468/student-result-management-c">
-          Student Result Management System in C
-        </a>
-      </p>
-      <p>
-        <a href="https://github.com/annu468/anumahato/tree/main/html-projects/my-first-html-project">
-          View this HTML project on GitHub
-        </a>
-      </p>
+    <section class="section" id="projects">
+      <h2>My Projects</h2>
+      <p class="muted">A couple of projects from my learning journey.</p>
+      <div class="project-grid">
+        <article class="project-card">
+          <h3>Student Result Management System</h3>
+          <p>A beginner C programming project for managing student result records.</p>
+          <a class="project-link" href="https://github.com/annu468/student-result-management-c">View C project ↗</a>
+        </article>
+        <article class="project-card">
+          <h3>My First HTML Project</h3>
+          <p>A simple webpage made to practise HTML structure, sections, lists and links.</p>
+          <a class="project-link" href="https://github.com/annu468/anumahato/tree/main/html-projects/my-first-html-project">View HTML project ↗</a>
+        </article>
+      </div>
     </section>
   </main>
 
-  <hr>
-
-  <footer>
-    <p>Made by Anu Mahato | My first HTML learning project</p>
+  <footer class="site-footer">
+    <p>Made with care by Anu Mahato · Built with HTML and CSS · Hosted free on GitHub Pages</p>
   </footer>
 </body>
 </html>
