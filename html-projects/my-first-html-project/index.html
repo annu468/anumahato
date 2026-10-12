@@ -3,52 +3,81 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Anu Mahato's beginner HTML project: a personal page about learning Computer Science and web development.">
+  <meta name="theme-color" content="#1d4ed8">
   <title>Anu Mahato | My First HTML Project</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>Hello, I'm Anu Mahato!</h1>
-    <p>A Computer Science student learning HTML, one page at a time.</p>
+  <header class="hero">
+    <nav class="top-nav" aria-label="Main navigation">
+      <a class="brand" href="https://annu468.github.io/anumahato/">Anu Mahato</a>
+      <a class="nav-link" href="https://github.com/annu468/anumahato">GitHub Repository ↗</a>
+    </nav>
+
+    <div class="hero-content">
+      <img
+        class="profile-photo"
+        src="https://avatars.githubusercontent.com/u/308239215?v=4"
+        alt="Anu Mahato's profile"
+        width="76"
+        height="76"
+      >
+      <p class="eyebrow">MY FIRST HTML PROJECT</p>
+      <h1>Hello, I'm Anu Mahato<span>.</span></h1>
+      <p class="hero-copy">A Computer Science student learning web development, one page at a time.</p>
+      <a class="primary-button" href="#about">Explore my page <span aria-hidden="true">↓</span></a>
+    </div>
+    <div class="hero-glow" aria-hidden="true"></div>
   </header>
 
-  <hr>
-
-  <main>
-    <section>
+  <main class="content">
+    <section class="card" id="about">
+      <p class="section-label">A LITTLE INTRODUCTION</p>
       <h2>About Me</h2>
-      <p>I am learning the fundamentals of web development and building small projects to practise what I learn.</p>
+      <p>I am learning the fundamentals of web development and building small projects to practise what I learn. I believe in learning step by step and improving with every project.</p>
     </section>
 
-    <section>
+    <section class="card">
+      <p class="section-label">CURRENT FOCUS</p>
       <h2>What I'm Learning</h2>
-      <ul>
+      <p class="section-intro">These are the subjects I'm exploring on my learning journey.</p>
+      <ul class="skill-list" aria-label="Subjects I am learning">
         <li>HTML</li>
-        <li>C programming</li>
+        <li>CSS</li>
+        <li>C Programming</li>
         <li>Java</li>
         <li>Python</li>
       </ul>
     </section>
 
-    <section>
-      <h2>My Goal</h2>
-      <p>My goal is to build a strong foundation in Computer Science and gradually create useful projects.</p>
+    <section class="card goal-card">
+      <div class="goal-icon" aria-hidden="true">✦</div>
+      <div>
+        <p class="section-label">LOOKING AHEAD</p>
+        <h2>My Goal</h2>
+        <p>To build a strong foundation in Computer Science and gradually create useful projects that solve real problems.</p>
+      </div>
     </section>
 
-    <section>
-      <h2>Explore My Work</h2>
-      <p>Take a look at my first C programming project:</p>
-      <p>
-        <a href="https://github.com/annu468/student-result-management-c">
-          Student Result Management System in C
-        </a>
-      </p>
+    <section class="project-card">
+      <div class="project-mark" aria-hidden="true">&lt;/&gt;</div>
+      <div class="project-details">
+        <p class="section-label">MY WORK</p>
+        <h2>Student Result Management System in C</h2>
+        <p>Explore my C programming project as I continue learning the fundamentals of programming.</p>
+        <a class="project-link" href="https://github.com/annu468/student-result-management-c" target="_blank" rel="noopener noreferrer">View project on GitHub <span aria-hidden="true">↗</span></a>
+      </div>
     </section>
+
+    <div class="back-link-wrap">
+      <a class="back-link" href="https://annu468.github.io/anumahato/">← Back to my portfolio</a>
+    </div>
   </main>
 
-  <hr>
-
-  <footer>
-    <p>Made by Anu Mahato | My first HTML learning project</p>
+  <footer class="site-footer">
+    <p>Made with care by <strong>Anu Mahato</strong></p>
+    <p>My first HTML &amp; CSS learning project</p>
   </footer>
 </body>
 </html>
