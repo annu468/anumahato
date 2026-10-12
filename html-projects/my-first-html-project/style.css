@@ -1,0 +1,185 @@
+/* Anu Mahato — beginner HTML + CSS project
+   Responsive, lightweight styling with no external framework. */
+:root {
+  color-scheme: light;
+  --ink: #14213d;
+  --muted: #5c6982;
+  --blue: #2458d3;
+  --blue-dark: #172d70;
+  --line: #e1e8f3;
+  --surface: #ffffff;
+  --page: #f4f7fc;
+  --radius: 20px;
+  --shadow: 0 12px 32px rgba(23, 45, 112, 0.06);
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--page);
+  color: var(--ink);
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+a { color: inherit; }
+.hero {
+  position: relative;
+  overflow: hidden;
+  color: #fff;
+  background: linear-gradient(118deg, #172b68 0%, #214dc4 56%, #5595f5 100%);
+}
+.top-nav {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  width: min(100% - 48px, 1040px);
+  margin: 0 auto;
+  padding: 24px 0;
+}
+.brand { color: #fff; text-decoration: none; font-weight: 800; letter-spacing: -0.03em; }
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.88rem;
+  font-weight: 650;
+  border: 1px solid rgba(255,255,255,.4);
+  border-radius: 999px;
+  padding: 8px 14px;
+  transition: background .2s ease, transform .2s ease;
+}
+.nav-link:hover { background: rgba(255,255,255,.14); transform: translateY(-1px); }
+.hero-content {
+  position: relative;
+  z-index: 1;
+  width: min(100% - 48px, 850px);
+  margin: 0 auto;
+  padding: 32px 0 88px;
+}
+.profile-photo {
+  display: block;
+  width: 76px;
+  height: 76px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid rgba(255,255,255,.9);
+  box-shadow: 0 6px 20px rgba(0,0,0,.15);
+}
+.eyebrow, .section-label {
+  margin: 20px 0 7px;
+  font-size: .72rem;
+  line-height: 1.4;
+  font-weight: 800;
+  letter-spacing: .14em;
+}
+.eyebrow { color: #dbe8ff; }
+h1, h2, p { margin-top: 0; }
+h1 {
+  max-width: 780px;
+  margin-bottom: 14px;
+  font-size: clamp(2.25rem, 6vw, 4.25rem);
+  line-height: 1.08;
+  letter-spacing: -.055em;
+}
+h1 span { color: #a9cbff; }
+.hero-copy { max-width: 570px; margin-bottom: 27px; color: #edf4ff; font-size: clamp(1rem, 2vw, 1.15rem); }
+.primary-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 11px 17px;
+  border-radius: 10px;
+  background: #fff;
+  color: #17377f;
+  text-decoration: none;
+  font-size: .9rem;
+  font-weight: 800;
+  box-shadow: 0 5px 16px rgba(8, 26, 77, .12);
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+.primary-button:hover { transform: translateY(-2px); box-shadow: 0 8px 20px rgba(8, 26, 77, .2); }
+.hero-glow {
+  position: absolute;
+  right: -100px;
+  bottom: -260px;
+  width: 480px;
+  height: 480px;
+  border: 1px solid rgba(255,255,255,.12);
+  border-radius: 50%;
+  box-shadow: 0 0 0 50px rgba(255,255,255,.035), 0 0 0 100px rgba(255,255,255,.025);
+}
+.content { width: min(100% - 40px, 850px); margin: 0 auto; padding: 36px 0 54px; }
+.card, .project-card {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
+.card { margin-bottom: 18px; padding: clamp(22px, 4vw, 34px); }
+.section-label { margin-top: 0; color: var(--blue); }
+h2 { margin-bottom: 10px; font-size: clamp(1.25rem, 2.5vw, 1.6rem); line-height: 1.25; letter-spacing: -.025em; }
+.card p:not(.section-label), .project-card p:not(.section-label) { margin-bottom: 0; color: var(--muted); }
+.section-intro { margin-bottom: 18px !important; }
+.skill-list { display: flex; flex-wrap: wrap; gap: 10px; margin: 20px 0 0; padding: 0; list-style: none; }
+.skill-list li {
+  padding: 6px 12px;
+  border: 1px solid #cfe0ff;
+  border-radius: 999px;
+  background: #f0f6ff;
+  color: #204da8;
+  font-size: .85rem;
+  font-weight: 750;
+}
+.goal-card { display: grid; grid-template-columns: 54px 1fr; align-items: start; gap: 20px; }
+.goal-icon, .project-mark {
+  display: grid;
+  place-items: center;
+  width: 54px;
+  height: 54px;
+  border-radius: 16px;
+  background: linear-gradient(145deg, #e9f1ff, #d9e6ff);
+  color: var(--blue);
+  font-size: 1.6rem;
+  font-weight: 800;
+}
+.goal-card .section-label { margin-top: 2px; }
+.project-card { display: flex; align-items: flex-start; gap: 22px; padding: clamp(22px, 4vw, 34px); }
+.project-mark { flex: 0 0 54px; font-size: 1.05rem; }
+.project-details { min-width: 0; }
+.project-details h2 { overflow-wrap: anywhere; }
+.project-link {
+  display: inline-flex;
+  gap: 8px;
+  margin-top: 19px;
+  color: var(--blue);
+  text-decoration: none;
+  font-weight: 800;
+}
+.project-link:hover, .back-link:hover { text-decoration: underline; text-underline-offset: 4px; }
+.back-link-wrap { padding-top: 26px; text-align: center; }
+.back-link { color: var(--blue); text-decoration: none; font-weight: 750; }
+.site-footer { border-top: 1px solid var(--line); padding: 24px 20px 30px; text-align: center; color: var(--muted); font-size: .88rem; }
+.site-footer p { margin: 0; }
+.site-footer p + p { margin-top: 3px; font-size: .8rem; }
+.site-footer strong { color: var(--ink); }
+a:focus-visible { outline: 3px solid #ffcb65; outline-offset: 4px; border-radius: 5px; }
+@media (max-width: 560px) {
+  .top-nav { width: calc(100% - 32px); padding: 18px 0; }
+  .nav-link { padding: 7px 10px; font-size: .78rem; }
+  .hero-content { width: calc(100% - 36px); padding: 28px 0 62px; }
+  .profile-photo { width: 68px; height: 68px; }
+  .content { width: calc(100% - 28px); padding: 22px 0 36px; }
+  .card { margin-bottom: 13px; border-radius: 16px; }
+  .goal-card { grid-template-columns: 42px 1fr; gap: 14px; }
+  .goal-icon { width: 42px; height: 42px; border-radius: 13px; }
+  .project-card { gap: 14px; border-radius: 16px; }
+  .project-mark { flex-basis: 42px; width: 42px; height: 42px; border-radius: 13px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { transition-duration: .01ms !important; animation-duration: .01ms !important; }
+}
